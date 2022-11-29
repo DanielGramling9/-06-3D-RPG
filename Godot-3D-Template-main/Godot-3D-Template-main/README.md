@@ -1,4 +1,4 @@
-# 3D-Character
+# 06-3D-RPG
 
 An animated 3D character that can be used in the 3D-RPG project
 
@@ -10,4 +10,4 @@ Created in Blender 3.1.2 and Godot 3.5
 
 ## Created By
 
-Jason Francis
+Daniel Gramling
