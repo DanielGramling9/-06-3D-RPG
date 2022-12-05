@@ -17,6 +17,10 @@ _global_script_class_icons={
 config/name="3D Character"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Global.gd"
+
 [input]
 
 forward={

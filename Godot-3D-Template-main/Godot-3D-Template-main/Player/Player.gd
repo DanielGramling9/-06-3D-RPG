@@ -8,6 +8,11 @@ var speed = 0.2
 var max_speed = 4
 
 var mouse_sensitivity = 0.002
+
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
 func _physics_process(_delta):
 	velocity.y += gravity * _delta
 	var falling = velocity.y

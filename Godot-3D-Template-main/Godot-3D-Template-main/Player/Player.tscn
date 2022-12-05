@@ -4889,7 +4889,7 @@ skin = SubResource( 3 )
 material/0 = SubResource( 4 )
 
 [node name="BoneAttachment" type="BoneAttachment" parent="Root/Skeleton"]
-transform = Transform( -0.814933, 0.13174, 0.564394, 0.438316, -0.49702, 0.748903, 0.379172, 0.857679, 0.347294, -0.661919, 1.33431, 0.225427 )
+transform = Transform( -0.835678, 0.123029, 0.535273, 0.425374, -0.471527, 0.77248, 0.34743, 0.873226, 0.341711, -0.659659, 1.32156, 0.251164 )
 bone_name = "right_hand_thumb_1"
 
 [node name="blasterH" parent="Root/Skeleton/BoneAttachment" instance=ExtResource( 3 )]
