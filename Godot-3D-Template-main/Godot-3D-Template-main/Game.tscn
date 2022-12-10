@@ -124,7 +124,8 @@ margin_bottom = -6.10352e-05
 bbcode_enabled = true
 bbcode_text = "
 "
-text = "Why"
+text = "
+"
 
 [connection signal="body_entered" from="NPC/Area" to="NPC" method="_on_Area_body_entered"]
 [connection signal="body_exited" from="NPC/Area" to="NPC" method="_on_Area_body_exited"]
