@@ -23,12 +23,18 @@ height = 1.0
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 <<<<<<< HEAD
+<<<<<<< HEAD
 transform = Transform( -0.0945774, 0, -0.995517, 0, 1, 0, 0.995517, 0, -0.0945774, 39.166, 1.95006, -14.9686 )
 collision_layer = 1
 collision_mask = 1
 =======
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.152569, 0 )
 >>>>>>> parent of 688b8b7 (Finished Second Video)
+=======
+transform = Transform( -0.0945774, 0, -0.995517, 0, 1, 0, 0.995517, 0, -0.0945774, 39.166, 0.152569, -14.9686 )
+collision_layer = 3
+collision_mask = 3
+>>>>>>> parent of 8d01ca5 (May Not work)
 script = ExtResource( 2 )
 
 [node name="Pivot" type="Position3D" parent="Player"]
@@ -75,6 +81,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5442, 2.84127, 2.94553 )
 transform = Transform( -0.997181, 0, -0.0750309, 0, 1, 0, 0.0750309, 0, -0.997181, 27.5057, -0.454512, 7.88437 )
 <<<<<<< HEAD
 
+
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource( 9 )
 
@@ -120,8 +127,7 @@ margin_bottom = -6.10352e-05
 bbcode_enabled = true
 bbcode_text = "
 "
-text = "
-"
+text = "Why"
 
 [connection signal="body_entered" from="NPC/Area" to="NPC" method="_on_Area_body_entered"]
 [connection signal="body_exited" from="NPC/Area" to="NPC" method="_on_Area_body_exited"]
