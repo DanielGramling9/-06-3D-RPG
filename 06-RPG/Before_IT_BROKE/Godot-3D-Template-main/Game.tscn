@@ -31,8 +31,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58203, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( -0.0945774, 0, -0.995517, 0, 1, 0, 0.995517, 0, -0.0945774, 39.166, 0.152569, -14.9686 )
-collision_layer = 3
-collision_mask = 3
 script = ExtResource( 2 )
 
 [node name="Pivot" type="Position3D" parent="Player"]
@@ -106,6 +104,7 @@ valign = 1
 [node name="Dialogue" type="Control" parent="UI"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_bottom = -100.0
 script = ExtResource( 8 )
 
 [node name="Background" type="ColorRect" parent="UI/Dialogue"]
