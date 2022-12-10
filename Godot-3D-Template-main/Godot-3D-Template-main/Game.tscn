@@ -1,14 +1,10 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.gd" type="Script" id=2]
 [ext_resource path="res://terrian.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Target/Target.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player/RayCast.gd" type="Script" id=5]
-[ext_resource path="res://NPC/NPC.tscn" type="PackedScene" id=6]
-[ext_resource path="res://NPC/NPC.gd" type="Script" id=7]
-[ext_resource path="res://UI/Dialogue.gd" type="Script" id=8]
-[ext_resource path="res://UI/UI.gd" type="Script" id=9]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 1, 0, 0, 1 )
@@ -23,16 +19,16 @@ material = SubResource( 1 )
 radius = 0.5
 height = 1.0
 
-[sub_resource type="SphereShape" id=3]
-radius = 6.0
-
 [node name="Game" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58203, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+<<<<<<< HEAD
 transform = Transform( -0.0945774, 0, -0.995517, 0, 1, 0, 0.995517, 0, -0.0945774, 39.166, 1.95006, -14.9686 )
 collision_layer = 1
 collision_mask = 1
+=======
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.152569, 0 )
+>>>>>>> parent of 688b8b7 (Finished Second Video)
 script = ExtResource( 2 )
 
 [node name="Pivot" type="Position3D" parent="Player"]
@@ -68,7 +64,6 @@ shape = SubResource( 3 )
 transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
 
 [node name="Target_container" type="Spatial" parent="."]
-visible = false
 
 [node name="Target2" parent="Target_container" instance=ExtResource( 4 )]
 transform = Transform( -0.167044, 0, -0.985949, 0, 1, 0, 0.985949, 0, -0.167044, -0.117254, 2.79898, -15.8337 )
@@ -78,6 +73,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5442, 2.84127, 2.94553 )
 
 [node name="Target" parent="Target_container/Target" instance=ExtResource( 4 )]
 transform = Transform( -0.997181, 0, -0.0750309, 0, 1, 0, 0.0750309, 0, -0.997181, 27.5057, -0.454512, 7.88437 )
+<<<<<<< HEAD
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource( 9 )
@@ -130,3 +126,5 @@ text = "
 [connection signal="body_entered" from="NPC/Area" to="NPC" method="_on_Area_body_entered"]
 [connection signal="body_exited" from="NPC/Area" to="NPC" method="_on_Area_body_exited"]
 [connection signal="timeout" from="UI/Timer" to="UI" method="_on_Timer_timeout"]
+=======
+>>>>>>> parent of 688b8b7 (Finished Second Video)
