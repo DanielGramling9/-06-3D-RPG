@@ -4,22 +4,25 @@
 script/source = "extends Control
 
 func _ready():
-	pass
+	$Label.text = \"Thanks for playing! Your score was \" + str(Global.score) + \".\"
 
 
 func _on_Play_pressed():
+	Global.reset()
 	var _scene = get_tree().change_scene(\"res://Game.tscn\")
 "
 
-[node name="Main_Menu" type="Control"]
+[node name="End_Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 margin_bottom = 400.0
-text = "Welcome to the an 3D RPG"
 align = 1
 valign = 1
 
@@ -32,6 +35,6 @@ margin_left = -75.0
 margin_top = -20.0
 margin_right = 75.0
 margin_bottom = 20.0
-text = "Play"
+text = "Play again?"
 
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
